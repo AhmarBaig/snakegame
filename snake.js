@@ -1,3 +1,7 @@
+ // Add more boundaries; edges
+ // Add a start and end screen
+ // Add a score keeper
+
 var s;
 var scl = 20;
 var apple;
@@ -30,6 +34,11 @@ function draw() {
   rect(apple.x, apple.y, scl, scl);
 }
 
+
+function startScreen() {
+  
+}
+
 function keyPressed() {
   if (keyCode == UP_ARROW) {
     s.dir(0, -1);
@@ -43,8 +52,8 @@ function keyPressed() {
 }
 
 function Snake() {
-  this.x = 0;
-  this.y = 0;
+  this.x = 300;
+  this.y = 300;
   this.xspeed = 0;
   this.yspeed = 0;
   this.total = 1;
